@@ -3,11 +3,11 @@
        "apps": [],
        "details": [
            {
-               "appID": "com.assura.myassura.acceptation",
+               "appID": "KX79BU5A78.com.assura.myassura.acceptation",
                "paths": [ "/ttt"]
            },
            {
-               "appID": "com.assura.myassura.acceptation",
+               "appID": "KX79BU5A78.com.assura.myassura.acceptation",
                "paths": [ "*" ]
            }
        ]
