@@ -1,0 +1,15 @@
+{
+   "applinks": {
+       "apps": [],
+       "details": [
+           {
+               "appID": "com.assura.myassura.acceptation",
+               "paths": [ "/ttt"]
+           },
+           {
+               "appID": "com.assura.myassura.acceptation",
+               "paths": [ "*" ]
+           }
+       ]
+   }
+}
