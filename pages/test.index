@@ -1,0 +1,14 @@
+<!-- FILEPATH: /Users/mbarry/Documents/TRAVAIL/test/testDeepLink.github.io/pages/test.index -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Index Page</title>
+</head>
+<body>
+    <h1>Welcome to the Test Index Page</h1>
+    <p>This is the index page of the test website.</p>
+    <a href="about.html">Go to About Page</a>
+    <a href="contact.html">Go to Contact Page</a>
+</body>
+</html>
