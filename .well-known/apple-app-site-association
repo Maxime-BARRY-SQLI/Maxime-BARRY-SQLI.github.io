@@ -4,7 +4,10 @@
        "details": [
            {
                "appID": "KX79BU5A78.com.assura.myassura.acceptation",
-               "paths": [ "*" ]
+               "paths": [
+                "NOT /_/*",
+                "/*"
+              ]
            }
        ]
    }
