@@ -1,48 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Web Page</title>
-</head>
-<body style="background-color: #E62D0A;">
-    <div style='
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12em;
-    font-family: "Gill Sans", sans-serif ;
-    color: white;
-    ' >assura.</div>
-    <script>
-        // store IOS : https://apps.apple.com/app/id1478101016
-        // store Android : https://play.google.com/store/apps/details?id=com.assura.myassura
-        const baseUrl = 'https://maxime-barry-sqli.github.io/'
-        const urlRoute = window.location.href;
-
-        const featureEnables = ['Inbox'];
-
-        if (urlRoute.startsWith(baseUrl)) {
-            const urlRouteArray = window.location.href.replace(baseUrl, '').split('/');
-            if (featureEnables.includes(urlRouteArray[0])) {
-                const isMobileDevice = /Mobi/i.test(window.navigator.userAgent)
-                if (isMobileDevice) {
-                    const isAndroid = /Android/i.test(window.navigator.userAgent)
-                    const isIOS = /iPhone|iPad|iPod/i.test(window.navigator.userAgent)
-                    if (isAndroid) {
-                        window.open("https://play.google.com/store/apps/details?id=com.assura.myassura", "_top");
-                    }
-                    if (isIOS) {
-                        window.open("itms-apps://apps.apple.com/app/id1478101016", "_top");
-                    }
+<script>
+    // store IOS : https://apps.apple.com/app/id1478101016
+    // store Android : https://play.google.com/store/apps/details?id=com.assura.myassura
+    const baseUrl = 'https://maxime-barry-sqli.github.io/'
+    const urlRoute = window.location.href;
+    const featureEnables = ['Inbox'];
+    if (urlRoute.startsWith(baseUrl)) {
+        const urlRouteArray = window.location.href.replace(baseUrl, '').split('/');
+        if (featureEnables.includes(urlRouteArray[0])) {
+            const isMobileDevice = /Mobi/i.test(window.navigator.userAgent)
+            if (isMobileDevice) {
+                const isAndroid = /Android/i.test(window.navigator.userAgent)
+                const isIOS = /iPhone|iPad|iPod/i.test(window.navigator.userAgent)
+                if (isAndroid) {
+                    window.open("https://play.google.com/store/apps/details?id=com.assura.myassura", "_top");
                 }
-            } else {
-                window.open("https://acc-cup.e-assura.ch/", "_self");
-                //to replace by nothing or window.open(urlRoute, "_self");
+                if (isIOS) {
+                    window.open("itms-apps://apps.apple.com/app/id1478101016", "_top");
+                }
             }
         } else {
             window.open("https://acc-cup.e-assura.ch/", "_self");
-                //to replace by nothing or window.open(urlRoute, "_self");
+            //to replace by nothing or window.open(urlRoute, "_self");
         }
-    </script>
-</body>
-</html>
+    } else {
+        window.open("https://acc-cup.e-assura.ch/", "_self");
+            //to replace by nothing or window.open(urlRoute, "_self");
+    }
+</script>
