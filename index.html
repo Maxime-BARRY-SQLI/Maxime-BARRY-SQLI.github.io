@@ -1,1 +1,40 @@
 Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <script>
+        // store IOS : https://apps.apple.com/app/id1478101016
+        // store Android : https://play.google.com/store/apps/details?id=com.assura.myassura
+        alert(window.navigator.userAgent)
+        const baseUrl = 'http://localhost:3000/'
+        const urlRoute = window.location.href;
+
+        const featureEnables = ['Inbox'];
+
+        if (urlRoute.startsWith(baseUrl)) {
+            const urlRouteArray = window.location.href.replace(baseUrl, '').split('/');
+            if (featureEnables.includes(urlRouteArray[0])) {
+                const isMobileDevice = /Mobi/i.test(window.navigator.userAgent)
+                if (isMobileDevice) {
+                    const isAndroid = /Android/i.test(window.navigator.userAgent)
+                    const isIOS = /iPhone|iPad|iPod/i.test(window.navigator.userAgent)
+                    if (isAndroid) {
+                        window.open("https://play.google.com/store/apps/details?id=com.assura.myassura", "_self");
+                    }
+                    if (isIOS) {
+                        window.open("https://apps.apple.com/app/id1478101016", "_self");
+                    }
+                }
+            } else {
+                window.open("https://acc-cup.e-assura.ch/", "_self");
+                //to replace by nothing or window.open(urlRoute, "_self");
+            }
+        }
+    </script>
+</body>
+</html>
