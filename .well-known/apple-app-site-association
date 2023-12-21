@@ -21,5 +21,9 @@
               ]
            }
        ]
+   },
+   
+   "webcredentials": {
+      "apps": [ "KX79BU5A78.com.assura.myassura.acceptation" ]
    }
 }
