@@ -4,6 +4,12 @@
        "details": [
            {
                "appID": "KX79BU5A78.com.assura.myassura.acceptation",
+               "components": [
+                {
+                   "/": "/Inbox/*",
+                   "comment": "Matches any URL whose path starts with /Inbox/"
+                }
+               ],
                "paths": [
                 "NOT /_/*",
                 "/*"
