@@ -5,9 +5,9 @@
             {
                 "appID": "KX79BU5A78.com.assura.myassura.acceptation",
                 "components": [
-
+                    
                     {
-                        "/": "/PasswordReset",
+                        "/": "/PasswordReset/Update",
                         "comment": "Matches any URL whose path starts with /PasswordReset/Update."
                     }
                 ]
